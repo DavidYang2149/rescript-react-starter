@@ -1,0 +1,25 @@
+{
+  "name": "rescript-react-starter",
+  "version": "0.0.1",
+  "description": "Rescript React starter kit",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "davidyang2149",
+  "license": "MIT",
+  "keywords": [
+    "rescript",
+    "react",
+    "rescript-react",
+    "starter",
+    "starter kit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidYang2149/rescript-react-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DavidYang2149/rescript-react-starter/issues"
+  },
+  "homepage": "https://github.com/DavidYang2149/rescript-react-starter#readme"
+}
