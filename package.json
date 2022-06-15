@@ -3,11 +3,16 @@
   "version": "0.0.1",
   "description": "Rescript React starter kit",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rescript",
+    "clean": "rescript clean -with-deps",
+    "watch": "rescript build -w",
+    "fmt": "rescript format -all"
   },
   "dependencies": {
+    "@rescript/react": "^0.10.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rescript": "^9.1.4"
   },
   "author": "davidyang2149",
   "license": "MIT",
