@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "Rescript React starter kit",
   "scripts": {
+    "start": "npm run serve",
+    "serve": "parcel serve index.html --port 8080",
     "build": "rescript",
     "clean": "rescript clean -with-deps",
     "watch": "rescript build -w",
@@ -13,6 +15,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rescript": "^9.1.4"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.0"
   },
   "author": "davidyang2149",
   "license": "MIT",
