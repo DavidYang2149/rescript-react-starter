@@ -6,8 +6,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@rescript/react": "^0.10.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rescript": "^9.1.4"
   },
   "author": "davidyang2149",
   "license": "MIT",
