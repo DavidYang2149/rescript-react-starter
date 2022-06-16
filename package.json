@@ -17,7 +17,8 @@
     "rescript": "^9.1.4"
   },
   "devDependencies": {
-    "parcel": "^2.6.0"
+    "parcel": "^2.6.0",
+    "process": "^0.11.10"
   },
   "author": "davidyang2149",
   "license": "MIT",
