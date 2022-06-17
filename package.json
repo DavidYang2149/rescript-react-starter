@@ -1,6 +1,6 @@
 {
   "name": "rescript-react-starter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "ReScript React starter kit",
   "scripts": {
     "start": "npm run serve",
