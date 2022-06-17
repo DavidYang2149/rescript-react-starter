@@ -36,5 +36,8 @@
   "bugs": {
     "url": "https://github.com/DavidYang2149/rescript-react-starter/issues"
   },
-  "homepage": "https://github.com/DavidYang2149/rescript-react-starter#readme"
+  "homepage": "https://github.com/DavidYang2149/rescript-react-starter#readme",
+  "bin": {
+    "rescript-react-starter": "./bin/rescript-react-starter-generator.js"
+  }
 }
