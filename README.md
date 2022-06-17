@@ -1,6 +1,6 @@
 # ReScript React Starter
 - GitHub: [ReScript React starter-kit](https://github.com/DavidYang2149/rescript-react-starter)
-- npm: [Download](https://www.npmjs.com/package/@davidyang2149/rescript-react-starter)
+- npm: [Download](https://www.npmjs.com/package/rescript-react-starter)
 
 ## 🚀 Quick start
 

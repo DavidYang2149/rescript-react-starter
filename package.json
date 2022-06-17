@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "ReScript React starter kit",
   "scripts": {
-    "start": "npm run serve",
+    "start": "npm run build && npm run serve",
     "serve": "parcel serve index.html --port 8080",
     "build": "rescript",
     "clean": "rescript clean -with-deps",
