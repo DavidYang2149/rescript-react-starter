@@ -6,8 +6,11 @@ const fs = require('fs');
 
 const { log } = console;
 
+const errorStartLine = '========================= 🚨 E R R O R 🚨 =========================';
+const errorEndLine = '=========================== 🚨 E N D 🚨 ===========================';
+
 if (process.argv.length < 3) {
-  log('\x1b[31m%s\x1b[0m', '========================= 🚨 E R R O R 🚨 =========================');
+  log('\x1b[31m%s\x1b[0m', errorStartLine);
   log('\x1b[31m%s\x1b[0m', '🚨 Warning:');
   log('');
   log('Please specify the project directory:');
@@ -15,7 +18,7 @@ if (process.argv.length < 3) {
   log('');
   log('For example:');
   log('npx rescript-react-starter my-project');
-  log('\x1b[31m%s\x1b[0m', '=========================== 🚨 E N D 🚨 ===========================');
+  log('\x1b[31m%s\x1b[0m', errorEndLine);
 
   process.exit(1);
 }
@@ -33,18 +36,18 @@ if (projectName !== '.') {
     fs.mkdirSync(projectPath);
   } catch (err) {
     if (err.code === 'EEXIST') {
-      log('\x1b[31m%s\x1b[0m', '========================= 🚨 E R R O R 🚨 =========================');
+      log('\x1b[31m%s\x1b[0m', errorStartLine);
       log(projectName);
       log(
         '\x1b[31m%s\x1b[0m',
         `🚨 The folder ${projectName} already exist in the current directory, please give it another name.`,
       );
-      log('\x1b[31m%s\x1b[0m', '=========================== 🚨 E N D 🚨 ===========================');
+      log('\x1b[31m%s\x1b[0m', errorEndLine);
     }
 
-    log('\x1b[31m%s\x1b[0m', '========================= 🚨 E R R O R 🚨 =========================');
+    log('\x1b[31m%s\x1b[0m', errorStartLine);
     log(err);
-    log('\x1b[31m%s\x1b[0m', '=========================== 🚨 E N D 🚨 ===========================');
+    log('\x1b[31m%s\x1b[0m', errorEndLine);
     process.exit(1);
   }
 }
@@ -89,9 +92,9 @@ async function main() {
     log('\x1b[35m%s\x1b[0m', '🎉 The installation is done, ready to use. Happy coding!');
     log('========================= 🎉 E N D 🎉 =========================');
   } catch (error) {
-    log('\x1b[31m%s\x1b[0m', '========================= 🚨 E R R O R 🚨 =========================');
+    log('\x1b[31m%s\x1b[0m', errorStartLine);
     log(error);
-    log('\x1b[31m%s\x1b[0m', '=========================== 🚨 E N D 🚨 ===========================');
+    log('\x1b[31m%s\x1b[0m', errorEndLine);
   }
 }
 
